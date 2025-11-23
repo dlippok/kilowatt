@@ -1,0 +1,12 @@
+using Gtk 4.0;
+
+translation-domain "io.github.dlippok.kilowatt";
+
+template $ExampleButton: Button {
+  clicked => $on_clicked();
+
+  Label {
+    halign: center;
+    label: _("Click Me!");
+  }
+}

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=App Template
+Comment=Template for PyGobject applications
+Exec=kilowatt
+Icon=io.github.dlippok.kilowatt
+Terminal=false
+Type=Application
+Categories=GNOME;Development
+Keywords=Template

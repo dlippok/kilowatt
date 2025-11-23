@@ -1,0 +1,26 @@
+app-id: io.github.dlippok.kilowatt
+runtime: org.gnome.Platform
+runtime-version: "47"
+sdk: org.gnome.Sdk
+command: kilowatt
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+
+modules:
+  - name: blueprint-compiler
+    buildsystem: meson
+    cleanup: [ "*" ]
+    sources:
+      - type: git
+        url: https://gitlab.gnome.org/GNOME/blueprint-compiler
+        tag: "v0.16.0"
+  - name: kilowatt
+    buildsystem: simple
+    build-commands:
+      - INSTALL_TARGET=${FLATPAK_DEST} make install
+    sources:
+      - type: dir
+        path: .

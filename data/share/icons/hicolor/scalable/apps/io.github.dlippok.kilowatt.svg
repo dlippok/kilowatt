@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128"
+   height="128"
+   viewBox="0 0 33.866666 33.866668"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="io.github.dlippok.app-template.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     showguides="false"
+     inkscape:zoom="4.9306388"
+     inkscape:cx="83.457746"
+     inkscape:cy="53.745571"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:lockguides="false">
+    <sodipodi:guide
+       position="-19.6018,3.1809222"
+       orientation="0,-1"
+       id="guide54"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-0.34942665,31.750876"
+       orientation="0,-1"
+       id="guide55"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="7.6198711,29.895749"
+       orientation="1,0"
+       id="guide56"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="26.549231,35.499766"
+       orientation="1,0"
+       id="guide57"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="16.935817,36.05201"
+       orientation="1,0"
+       id="guide58"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="2.1248697,17.133318"
+       orientation="0,-1"
+       id="guide59"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-1.5561708,25.871169"
+       orientation="0,-1"
+       id="guide60"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1.0195602,26.40778"
+       orientation="0,-1"
+       id="guide61"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1.8244762,14.119395"
+       orientation="0,-1"
+       id="guide62"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="26.079277,10.899731"
+       orientation="0,-1"
+       id="guide63"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="4.0220748,18.043977"
+       orientation="0,-1"
+       id="guide64"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="2.6940312,11.669367"
+       orientation="0,-1"
+       id="guide65"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="5.957224,6.584857"
+       orientation="0,-1"
+       id="guide66"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="15.13242,13.032759"
+       orientation="0,-1"
+       id="guide67"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#f9f06b;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#f9f06b;stop-opacity:0;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient13462"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#b94545;stop-opacity:1;"
+         offset="0"
+         id="stop13460" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient12624"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#aa8800;stop-opacity:1;"
+         offset="0"
+         id="stop12622" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="11.847761"
+       y1="14.318718"
+       x2="14.1126"
+       y2="14.318718"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#f9f06b;fill-rule:evenodd;stroke:#000000;stroke-width:1.32291668;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.32291663, 2.64583325;stroke-opacity:1;stroke-dashoffset:0"
+       id="rect1"
+       width="19.07515"
+       height="19.07515"
+       x="14.409776"
+       y="-9.5375748"
+       ry="0.064743884"
+       transform="rotate(45)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.1111px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       x="12.451268"
+       y="22.066523"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.1111px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans Bold';fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-dasharray:none"
+         x="12.451268"
+         y="22.066523">T</tspan></text>
+  </g>
+</svg>
