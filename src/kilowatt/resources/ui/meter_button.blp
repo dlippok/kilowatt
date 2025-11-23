@@ -1,0 +1,44 @@
+using Gtk 4.0;
+
+translation-domain "io.github.dlippok.kilowatt";
+
+template $MeterButton: Button {
+  clicked => $on_clicked();
+  width-request: 180;
+  height-request: 180;
+
+  Box {
+    orientation: vertical;
+    vexpand: false;
+    margin-start: 12;
+    margin-end: 12;
+    margin-top: 12;
+    margin-bottom: 12;
+
+    Label descriptionLabel {
+        xalign: 0;
+    }
+
+    Label readingLabel {
+        halign: center;
+        vexpand: true;
+        css-classes: ["reading"];
+    }
+
+    Box {
+        orientation: horizontal;
+        homogeneous: true;
+        spacing: 12;
+
+        Label idLabel {
+            xalign: 0;
+            css-classes: ["dim-label"];
+        }
+
+        Label readingDateLabel {
+            xalign: 1;
+            css-classes: ["dim-label"];
+        }
+    }
+  }
+}

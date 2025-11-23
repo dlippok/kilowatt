@@ -14,5 +14,6 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 kilowatt = [
-    "resources/ui/compiled/*.ui"
+    "resources/ui/compiled/*.ui",
+    "resources/style.css"
 ]

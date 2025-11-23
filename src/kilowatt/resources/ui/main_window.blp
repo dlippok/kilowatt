@@ -4,20 +4,17 @@ using Adw 1;
 translation-domain "io.github.dlippok.kilowatt";
 
 Adw.ApplicationWindow main_window {
-    title: _("Application Template");
+    title: _("Kilowatt");
 
     Box {
         orientation: vertical;
 
         HeaderBar { }
-
-        Label {
-            label: _("Application Template");
-            margin-top: 24;
-            margin-bottom: 24;
+        ScrolledWindow {
+            hscrollbar-policy: never;
             vexpand: true;
-        }
 
-        $ExampleButton { }
+            $MetersBox metersBox { }
+        }
     }
 }

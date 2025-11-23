@@ -1,3 +1,4 @@
+import os
 import sys
 
 import gi
@@ -5,11 +6,14 @@ import gi
 gi.require_version(namespace='Gtk', version='4.0')
 gi.require_version(namespace='Adw', version='1')
 
-from gi.repository import Gtk, Adw
+from kilowatt.data import METERS
+from kilowatt.view.meter_button import MeterButton
+
+from gi.repository import Gtk, Adw, Gdk
 from kilowatt.util.locales import init_locale
 from kilowatt.util.ui import ui_path
 
-from kilowatt.view.example_button import ExampleButton
+from kilowatt.view.meters_box import MetersBox
 
 APPLICATION_ID = 'io.github.dlippok.kilowatt'
 init_locale(APPLICATION_ID)
@@ -17,8 +21,20 @@ init_locale(APPLICATION_ID)
 class Application(Adw.Application):
     def __init__(self):
         super().__init__(application_id=APPLICATION_ID)
+        css_provider = Gtk.CssProvider()
+        css_provider.load_from_path(os.path.dirname(__file__) + "/resources/style.css")
+        Gtk.StyleContext.add_provider_for_display(
+            Gdk.Display.get_default(), css_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+        )
+
         self.builder = Gtk.Builder()
         self.builder.add_from_file(ui_path("main_window.ui"))
+
+        meters_box: MetersBox = self.builder.get_object("metersBox")
+
+        for meter in METERS:
+            button = MeterButton(meter)
+            meters_box.append(button)
 
     def do_activate(self):
         window: Adw.ApplicationWindow = self.builder.get_object("main_window")
