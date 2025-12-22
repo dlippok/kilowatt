@@ -15,11 +15,9 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
           <object class="GtkHeaderBar"></object>
         </child>
         <child>
-          <object class="GtkScrolledWindow">
-            <property name="hscrollbar-policy">2</property>
-            <property name="vexpand">true</property>
+          <object class="AdwNavigationView" id="nav">
             <child>
-              <object class="MetersBox" id="metersBox"></object>
+              <object class="StartPage" id="startPage"></object>
             </child>
           </object>
         </child>

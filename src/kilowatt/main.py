@@ -6,17 +6,15 @@ import gi
 gi.require_version(namespace='Gtk', version='4.0')
 gi.require_version(namespace='Adw', version='1')
 
+from kilowatt.view.start_page import StartPage
 from kilowatt.data import METERS
-from kilowatt.view.meter_button import MeterButton
-
 from gi.repository import Gtk, Adw, Gdk
 from kilowatt.util.locales import init_locale
 from kilowatt.util.ui import ui_path
 
-from kilowatt.view.meters_box import MetersBox
-
 APPLICATION_ID = 'io.github.dlippok.kilowatt'
 init_locale(APPLICATION_ID)
+
 
 class Application(Adw.Application):
     def __init__(self):
@@ -29,12 +27,8 @@ class Application(Adw.Application):
 
         self.builder = Gtk.Builder()
         self.builder.add_from_file(ui_path("main_window.ui"))
-
-        meters_box: MetersBox = self.builder.get_object("metersBox")
-
-        for meter in METERS:
-            button = MeterButton(meter)
-            meters_box.append(button)
+        start_page: StartPage = self.builder.get_object("startPage")
+        start_page.update_meters(METERS)
 
     def do_activate(self):
         window: Adw.ApplicationWindow = self.builder.get_object("main_window")

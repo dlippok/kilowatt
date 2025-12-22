@@ -1,0 +1,15 @@
+using Gtk 4.0;
+using Adw 1;
+
+translation-domain "io.github.dlippok.kilowatt";
+
+template $StartPage: Adw.NavigationPage {
+    title: _("Your Meters");
+
+    ScrolledWindow {
+        hscrollbar-policy: never;
+        vexpand: true;
+
+        $MetersBox metersBox { }
+    }
+ }

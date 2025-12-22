@@ -10,11 +10,9 @@ Adw.ApplicationWindow main_window {
         orientation: vertical;
 
         HeaderBar { }
-        ScrolledWindow {
-            hscrollbar-policy: never;
-            vexpand: true;
+        Adw.NavigationView nav {
+            $StartPage startPage { }
 
-            $MetersBox metersBox { }
         }
     }
 }
