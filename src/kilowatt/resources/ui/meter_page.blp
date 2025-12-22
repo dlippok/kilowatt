@@ -1,0 +1,17 @@
+using Gtk 4.0;
+using Adw 1;
+
+translation-domain "io.github.dlippok.kilowatt";
+
+template $MeterPage: Adw.NavigationPage {
+    title: _("Your Meter");
+
+    ScrolledWindow {
+        hscrollbar-policy: never;
+        vexpand: true;
+
+        Label meterLabel {
+            label: "Meter name goes here...";
+        }
+    }
+ }
