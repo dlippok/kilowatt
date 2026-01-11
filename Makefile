@@ -6,6 +6,17 @@ app_id = io.github.dlippok.kilowatt
 sources = $(shell find src/$(app_package)/ -name "*.py")
 ui_sources = $(shell find src/$(app_package)/resources/ui -name "*.blp")
 
+all: validate build
+
+build:
+	mkdir -p build/dist/share
+	cp --recursive data/share/* build/dist/share
+	blueprint-compiler batch-compile src/$(app_package)/resources/ui/compiled/ src/$(app_package)/resources/ui src/$(app_package)/resources/ui/*.blp
+
+	mkdir -p build/dist/share/locale/de/LC_MESSAGES
+	msgfmt data/translations/de/$(app_id).po \
+  		-o build/dist/share/locale/de/LC_MESSAGES/$(app_id).mo
+
 update-translations:
 	xgettext \
 		$(sources) \
@@ -18,15 +29,8 @@ update-translations:
 
 	msgmerge --update  data/translations/de/$(app_id).po data/translations/$(app_id).pot
 
-build:
-	mkdir -p build/dist/share
-	cp --recursive data/share/* build/dist/share
-	blueprint-compiler batch-compile src/$(app_package)/resources/ui/compiled/ src/$(app_package)/resources/ui src/$(app_package)/resources/ui/*.blp
-
-	mkdir -p build/dist/share/locale/de/LC_MESSAGES
-	msgfmt data/translations/de/$(app_id).po \
-  		-o build/dist/share/locale/de/LC_MESSAGES/$(app_id).mo
-
+validate:
+	mypy src/
 
 install: build
 	pip3 install . --prefix $(INSTALL_TARGET) --no-build-isolation
@@ -49,5 +53,6 @@ clean:
 	rm -rf .flatpak-builder
 	rm -rf build
 	rm -rf src/resources/ui/compiled
+
 
 

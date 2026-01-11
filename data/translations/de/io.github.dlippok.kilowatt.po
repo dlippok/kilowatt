@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-01 20:50+0200\n"
+"POT-Creation-Date: 2025-11-23 22:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,15 +11,19 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/kilowatt/view/example_button.py:16
-msgid "Button Clicked"
-msgstr "Button geklickt"
+#: src/kilowatt/view/meter_button.py:34
+msgid "No reading"
+msgstr ""
 
-#: src/kilowatt/resources/ui/main_window.bp:5
-#: src/kilowatt/resources/ui/main_window.bp:13
-msgid "Application Template"
-msgstr "Anwendungsvorlage"
+#: src/kilowatt/resources/ui/main_window.blp:7
+msgid "Kilowatt"
+msgstr ""
 
-#: src/kilowatt/resources/ui/example_button.bp:8
-msgid "Click Me!"
-msgstr "Klick mich!"
+#~ msgid "Button Clicked"
+#~ msgstr "Button geklickt"
+
+#~ msgid "Application Template"
+#~ msgstr "Anwendungsvorlage"
+
+#~ msgid "Click Me!"
+#~ msgstr "Klick mich!"

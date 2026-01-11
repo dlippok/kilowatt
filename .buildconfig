@@ -1,0 +1,16 @@
+[default]
+name=Default
+runtime=host
+toolchain=default
+config-opts=
+run-opts=
+prefix=/home/dalee/Projects/.gnome-builder/projects/kilowatt/install/host
+app-id=
+postbuild=
+prebuild=
+run-command=
+builddir=false
+default=true
+
+[default.environment]
+INSTALL_TARGET=./build
