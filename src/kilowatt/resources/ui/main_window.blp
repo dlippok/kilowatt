@@ -6,13 +6,7 @@ translation-domain "io.github.dlippok.kilowatt";
 Adw.ApplicationWindow main_window {
     title: _("Kilowatt");
 
-    Box {
-        orientation: vertical;
-
-        HeaderBar { }
-        Adw.NavigationView nav {
-            $StartPage startPage { }
-
-        }
+    Adw.NavigationView nav {
+        $StartPage startPage { }
     }
 }

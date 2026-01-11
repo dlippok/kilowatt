@@ -6,12 +6,64 @@ translation-domain "io.github.dlippok.kilowatt";
 template $MeterPage: Adw.NavigationPage {
     title: _("Your Meter");
 
-    ScrolledWindow {
-        hscrollbar-policy: never;
-        vexpand: true;
+    Box {
+        orientation: vertical;
 
-        Label meterLabel {
-            label: "Meter name goes here...";
+        Adw.HeaderBar { }
+
+        Adw.Clamp {
+            margin-start: 12;
+            margin-end: 12;
+            margin-top: 12;
+            margin-bottom: 12;
+
+            Adw.Bin {
+                css-classes: ["card"];
+
+                Box {
+                    orientation: vertical;
+                    vexpand: false;
+                    margin-start: 12;
+                    margin-end: 12;
+                    margin-top: 12;
+                    margin-bottom: 12;
+
+                    Label descriptionLabel {
+                        xalign: 0;
+                    }
+
+                    Label readingLabel {
+                        halign: center;
+                        vexpand: true;
+                        css-classes: ["reading"];
+                    }
+
+                    Box {
+                        orientation: horizontal;
+                        homogeneous: true;
+                        spacing: 12;
+
+                        Label idLabel {
+                            xalign: 0;
+                            css-classes: ["dim-label"];
+                        }
+
+                        Label readingDateLabel {
+                            xalign: 1;
+                            css-classes: ["dim-label"];
+                        }
+                    }
+                }
+            }
+        }
+
+       ScrolledWindow {
+            hscrollbar-policy: never;
+            vexpand: true;
+
+            Label {
+                label: "Meter details go here...";
+            }
         }
     }
  }

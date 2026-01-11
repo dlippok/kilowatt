@@ -9,11 +9,19 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
   <template class="StartPage" parent="AdwNavigationPage">
     <property name="title" translatable="yes">Your Meters</property>
     <child>
-      <object class="GtkScrolledWindow">
-        <property name="hscrollbar-policy">2</property>
-        <property name="vexpand">true</property>
+      <object class="GtkBox">
+        <property name="orientation">1</property>
         <child>
-          <object class="MetersBox" id="metersBox"></object>
+          <object class="GtkHeaderBar"></object>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow">
+            <property name="hscrollbar-policy">2</property>
+            <property name="vexpand">true</property>
+            <child>
+              <object class="MetersBox" id="metersBox"></object>
+            </child>
+          </object>
         </child>
       </object>
     </child>

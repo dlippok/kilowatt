@@ -39,7 +39,7 @@ class Application(Adw.Application):
         page = MeterPage(meter)
         self.nav.push(page)
 
-    def on_meter_selected(self, page: StartPage, button: MeterButton):
+    def on_meter_selected(self, _: StartPage, button: MeterButton):
         self.open_meter_page(button.meter)
 
     def do_activate(self):

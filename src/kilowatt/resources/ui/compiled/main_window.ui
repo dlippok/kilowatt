@@ -9,17 +9,9 @@ corresponding .blp file and regenerate this file with blueprint-compiler.
   <object class="AdwApplicationWindow" id="main_window">
     <property name="title" translatable="yes">Kilowatt</property>
     <child>
-      <object class="GtkBox">
-        <property name="orientation">1</property>
+      <object class="AdwNavigationView" id="nav">
         <child>
-          <object class="GtkHeaderBar"></object>
-        </child>
-        <child>
-          <object class="AdwNavigationView" id="nav">
-            <child>
-              <object class="StartPage" id="startPage"></object>
-            </child>
-          </object>
+          <object class="StartPage" id="startPage"></object>
         </child>
       </object>
     </child>
